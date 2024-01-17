@@ -1,0 +1,153 @@
+/*   FONTS   */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* BARRA DE NAVEGACION */
+.grid-item a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  
+ 
+    margin: 10px;
+
+    /*padding: 20px;
+    margin: 50px 80px 50px 80px;*/
+
+}
+
+.grid-item {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-navbar {
+    display: grid;
+    border: 1px solid red;
+    background-color: hsl(264, 67%, 84%);
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
+.grid-body {
+    display: grid;
+    border: 2px solid black;
+    background-color: #d6f8e1;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+.grid-header {
+    display: grid;
+    border: 2px solid greenyellow;
+    grid-template-rows: 1 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+
+
+p {
+    font-family: 'Lora', serif;
+    color: black;
+    font-size: 150%;
+    font-weight: 200;
+    text-align: center;
+    padding: 60px 80px 20px 80px;
+}
+
+.contenido {
+    background-color: hsl(264, 67%, 84%);
+    padding: 20px;
+    margin: 50px 80px 50px 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido img {
+    width: 85%;
+}
+
+.contenido p {
+    font-family: 'Lora', serif;
+    font-size: 180%;
+    color: black;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 55px;
+    color: #151916;
+    text-align: center;
+
+    padding: 30px;
+    margin: 70px 50px 50px 50px;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: #151916;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    color: #404a43;
+    text-align: left;
+}
+
+.redes {
+    padding: 30px;
+    margin: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.redes img {
+    width: 50px;
+}
+
+footer {
+    margin: 70px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 200px;
+}
