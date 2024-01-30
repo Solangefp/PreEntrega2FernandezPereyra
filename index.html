@@ -1,68 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidad con los navegadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
     <!--CSS-->
     <link rel="stylesheet" href="styles/styles.css">
-    
-    <title>Proyecto</title>
-  </head>
-  <body>
-    <section class="grid-body">
+
+    <title>Camino de luz - Inicio</title>
+</head>
+
+<body>
+
     <header>
-        <figure class="grid-header">
-            <img src="images/imagotipo.png" alt="">
-        </figure>
-        <nav class="grid-navbar">
-            <ul class="grid-item">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="pages/sobre-mi.html">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="pages/meditacion-reiki.html">Meditación y Reiki</a>
-                </li>
-                <li>
-                    <a href="pages/astrologia-numerologia.html">Astrología y Numerología</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        </section>
+        <figure class="header-img">
+            <img src="images/headerimg.png" alt="">
+        </figure> 
+
+        <div> <!--class="responsive-navbar"-->
+            <nav class="navbar navbar-expand-lg bg-nav">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-content">
+                        <ul class="navbar-ul">
+                            <li class="list-item current-item">
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="pages/sobre-mi.html">Sobre mi</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="pages/meditacion-reiki.html">Meditación y Reiki</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="pages/astrologia-numerologia.html">Astrología y Numerología</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <p>El autoconocimiento es un proceso de introspección autoobservación que requiere de inteligencia emocional<br>y lleva a la <i>autoaceptación</i> y al <i>crecimiento personal</i>. El camino del autoconocimiento conduce a la construcción<br>de una identidad, lo que podemos alcanzar mediante la integración de diferentes prácticas y disciplinas<br>como Reiki, meditación, numerología, astrología, etc.</p>
-        <div class="contenido">
+
+        <section class="main-title">
+            <h2><strong>¡Bienvenido!</strong></h2>
+            <p>El autoconocimiento es un proceso de introspección autoobservación que requiere de inteligencia emocional<br>y lleva a la <i>autoaceptación</i> y al <i>crecimiento personal</i>. El camino del autoconocimiento conduce a la construcción<br>de una identidad, lo que podemos alcanzar mediante la integración de diferentes prácticas y disciplinas<br>como Reiki, meditación, numerología, astrología, etc.</p>
+        </section>
+
+        <section class="main-content">
             <img src="https://tse2.mm.bing.net/th?id=OIP.Bcc5avWCBfuToSV_dje5QQHaEi&pid=Api&P=0&h=180" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos autem minus libero nulla vitae voluptate impedit porro facilis hic voluptatem recusandae, amet quibusdam numquam maxime illo fugiat.</p>
-        </div>
-        <h1>Te invito a transitar juntos este camino <br>¿Te animás?</h1>
-        <div class="redes">
-            <a href="">
-                <img src="icons/Facebook.png" alt="">
-            </a>
-            <a href="">
-                <img src="icons/Instagram.png" alt="">
-            </a>
-            <a href="">
-                <img src="icons/Whatsapp.png" alt="">
-            </a>
-        </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos autem minus libero nulla vitae voluptate impedit porro facilis hic voluptatem recusandae, amet quibusdam numquam maxime illo fugiat corrupti repellendus accusamus.</p>
+        </section>
+        
+        <h3>Te invito a transitar juntos este camino <br>¿Te animás?</h3>
+        
+        <section class="redes">
+            <ul class="redes-ul">
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <img class="icons" src="icons/Facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <img class="icons" src="icons/Instagram.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="icons" src="icons/Whatsapp.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        <section>
     </main>
 
     <footer>
-        <h4>©Copyright 2023 Camino de luz, todos los derechos reservados</h4>
-        <img src="images/Pie-firma.png" alt="">
+        <div class="footer">
+            <h4>©Copyright 2023 Camino de luz, todos los derechos reservados</h4>
+            <img src="images/pie-firma.png" alt="">
+        </div>
     </footer>
     
+    <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>

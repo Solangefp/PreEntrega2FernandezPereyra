@@ -2,89 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidad con los navegadores -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="../styles/styles.css">
 
-    <title>Proyecto</title>
+    <title>Camino de luz - Meditación y Reiki</title>
 </head>
+
 <body>
+
     <header>
-        <img src="../images/imagotipo.png" alt="">
-        <nav>
-            <ul>
-                <li class="list-item">
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li class="list-item">
-                    <a href="../pages/sobre-mi.html">Sobre mi</a>
-                </li>
-                <li class="list-item">
-                    <a href="../pages/meditacion-reiki.html">Meditación y Reiki</a>
-                </li>
-                <li class="list-item">
-                    <a href="../pages/astrologia-numerologia.html">Astrología y Numerología</a>
-                </li>
-                <li class="list-item">
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <figure class="header-img">
+            <img src="../images/headerimg.png" alt="">
+        </figure> 
+
+        <div> <!--class="responsive-navbar"-->
+            <nav class="navbar navbar-expand-lg bg-nav">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-content">
+                        <ul class="navbar-ul">
+                            <li class="list-item">
+                                <a href="../index.html">Inicio</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="sobre-mi.html">Sobre mi</a>
+                            </li>
+                            <li class="list-item current-item">
+                                <a href="meditacion-reiki.html">Meditación y Reiki</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="astrologia-numerologia.html">Astrología y Numerología</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h2>Meditación</h2>
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>        
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
-        </article>
-        <img src="../images/meditacion.png" alt="">
+        <section class="pages"> <!-- Meditcion -->
+            <div class="pages-title">
+                <h2><strong>Meditación</strong></h2> 
+            </div>
+            <div class="main-cont">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
+                <img src="../images/meditacion.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
+            </div>
+        </section>
 
-        <!--Texto debajo de la imagen-->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
-        
-        <h2>Reiki</h2>
-        <img src="../images/reiki.png" alt="">
-        <!-- el primer parrafo iria al costado de la imagen -->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
+        <section class="pages"> <!-- Reiki -->
+            <div class="pages-title">
+                <h2><strong>Reiki</strong></h2> 
+            </div>
+            <section class="main-cont">
+                <div class="main-content-pages">
+                    <img src="../images/reiki.png" alt="">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
+                    </div>
+                </div>
+                <div class="main-cont">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QCd6mB_Cn_o?si=fxT14XajU2S5rvo_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- los siguientes parrafos irian debajo de la imagen -->
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>       
-        </article>
-
-        <iframe src="https://www.youtube.com/embed/QCd6mB_Cn_o?si=q0wCXUJVA80HfhEr" frameborder="0">
-
-        </iframe>
-
-        <!-- los siguientes parrafos irian debajo del video -->
-        <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas quidem? Illo possimus architecto porro tempore fugiat maxime vel quaerat corporis et? Necessitatibus perferendis repudiandae earum quaerat officiis tempore mollitia!</p>       
-        </article>
-
-
-        <a href="">
-            <img src="../icons/Facebook.png" alt="">
-        </a>
-        <a href="">
-            <img src="../icons/Instagram.png" alt="">
-        </a>
-        <a href="">
-            <img src="../icons/Whatsapp.png" alt="">
-        </a>
-    </main>
+        <section class="redes">
+            <ul class="redes-ul">
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <img class="icons" src="../icons/Facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <img class="icons" src="../icons/Instagram.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="icons" src="../icons/Whatsapp.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        <section>
+     </main>
 
     <footer>
-        <h4>© Copyright 2023 Camino de luz, todos los derechos reservados</h4>
-        <img src="../images/Pie-firma.png" alt="">
+        <div class="footer">
+            <h4>©Copyright 2023 Camino de luz, todos los derechos reservados</h4>
+            <img src="../images/pie-firma.png" alt="">
+        </div>
     </footer>
+        
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
 </body>
 </html>
