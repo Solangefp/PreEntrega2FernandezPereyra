@@ -1,0 +1,18 @@
+h2 {
+    padding-bottom: 10px;
+    @include estilo-txt($gothic, 25px, $darkgray, center);
+}
+    
+p {
+    @include estilo( auto, 0px, 10px);
+    @include estilo-txt($gothic, 18px, black, center);
+}
+
+h3 {
+    margin-top: 60px;
+    @include estilo-txt($libre, 20px, $darkgray, center);
+}
+
+h4 {
+    @include estilo-txt($lora, 10px, $graygreen, center);
+}

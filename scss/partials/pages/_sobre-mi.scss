@@ -1,0 +1,32 @@
+.pages { 
+    @include estilo($lilac, 30px 50px, 40px 30px);
+    @include flex(column, center, center);
+}
+
+.pages-title { /* revisar*/
+    @include flex(column, center, center);
+    align-self: center;
+}
+
+.main-cont {
+    @include flex(column, center, center);
+    img { /*pages reemplazar por video en sobre-mi*/
+        padding: 2px 0px;
+        @include flex(column, center, center);
+        width: 50%;
+    }
+}
+
+.main-content-pages {
+    @include estilo($lilac, 15px, 0px);
+    @include flex(row, center, center);
+    img {
+        padding-right: 25px;
+        width: 40%;
+    }
+}
+
+iframe {
+    max-width: 80%;
+    height: auto;
+}

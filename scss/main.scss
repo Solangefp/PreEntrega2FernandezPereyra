@@ -1,0 +1,19 @@
+// UTILITIES
+@import "partials/utilities/variables";
+@import "partials/utilities/maps";
+@import "partials/utilities/mixins";
+
+// BASE
+@import "partials/base/reset";
+@import "partials/base/tipografia";
+
+// COMPONENTS
+@import "partials/components/index";
+@import "partials/components/header";
+@import "partials/components/navbar";
+@import "partials/components/redes";
+@import "partials/components/footer";
+
+// PAGES
+@import "partials/pages/index";
+@import "partials/pages/sobre-mi";

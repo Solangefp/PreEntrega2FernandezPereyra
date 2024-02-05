@@ -1,0 +1,19 @@
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin estilo ($bg-color, $margin, $padding) {
+    background-color: $bg-color;
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin estilo-txt ($family, $size, $color, $align) {
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+    text-align: $align;
+}

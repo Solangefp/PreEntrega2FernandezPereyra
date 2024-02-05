@@ -1,0 +1,33 @@
+.bg-nav {
+    @include estilo($lilac, 0px, 0px);
+}
+
+.list-item {
+    list-style: none;
+    a {
+        @include estilo( auto, 0px, 0px 20px);
+        @include estilo-txt($gothic, $nav-fontsize, $gray, center);
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+}
+
+.current-item {
+    @include estilo( auto, 0px, 0px 20px);
+    @include estilo-txt($gothic, $nav-fontsize, black, center);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar-ul {
+    @include estilo( auto, 0px, 0px);
+    @include flex(row, auto, center);
+}
+
+.nav-content {
+    @include flex(row, space-around, center);
+}

@@ -1,0 +1,238 @@
+/* COLORES */
+/* FUENTES */
+/* FONT SIZE */
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d6f8e1;
+}
+
+/*   FONTS   */
+@font-face {
+  font-family: "century-gothic-normal";
+  src: url(../../../fonts/century-gothic/gothic.TTF);
+}
+h2 {
+  padding-bottom: 10px;
+  font-family: "century-gothic-normal";
+  font-size: 25px;
+  color: #151916;
+  text-align: center;
+}
+
+p {
+  background-color: auto;
+  margin: 0px;
+  padding: 10px;
+  font-family: "century-gothic-normal";
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 60px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  color: #151916;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Lora", serif;
+  font-size: 10px;
+  color: #404a43;
+  text-align: center;
+}
+
+.header-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAF5BB;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+.header-img img {
+  width: 80%;
+}
+
+.bg-nav {
+  background-color: #F0C4F7;
+  margin: 0px;
+  padding: 0px;
+}
+
+.list-item {
+  list-style: none;
+}
+.list-item a {
+  background-color: auto;
+  margin: 0px;
+  padding: 0px 20px;
+  font-family: "century-gothic-normal";
+  font-size: 15px;
+  color: rgba(44, 38, 38, 0.92);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.list-item a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.current-item {
+  background-color: auto;
+  margin: 0px;
+  padding: 0px 20px;
+  font-family: "century-gothic-normal";
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navbar-ul {
+  background-color: auto;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: auto;
+  align-items: center;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.redes {
+  background-color: transparent;
+  margin: 20px;
+  padding: 30px;
+}
+
+.redes-ul {
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.redes-ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.redes-ul li a {
+  display: block;
+  padding: 5px;
+  line-height: 50px;
+}
+
+.icons {
+  width: 100%;
+}
+
+.footer {
+  margin: 0px 20px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer img {
+  width: 10%;
+}
+
+.main-title {
+  background-color: transparent;
+  margin: 15px;
+  padding: 40px 30px;
+}
+.main-title p {
+  font-size: 20px;
+}
+
+.main-content {
+  background-color: #F0C4F7;
+  margin: 15px 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-content img {
+  padding-right: 25px;
+  width: 80%;
+}
+
+.pages {
+  background-color: #F0C4F7;
+  margin: 30px 50px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages-title { /* revisar*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.main-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-cont img { /*pages reemplazar por video en sobre-mi*/
+  padding: 2px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.main-content-pages {
+  background-color: #F0C4F7;
+  margin: 15px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-content-pages img {
+  padding-right: 25px;
+  width: 40%;
+}
+
+iframe {
+  max-width: 80%;
+  height: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
