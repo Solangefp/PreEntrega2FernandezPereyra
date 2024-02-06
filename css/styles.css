@@ -235,4 +235,18 @@ iframe {
   height: auto;
 }
 
+/* CONTACTO */
+.form-width {
+  width: 80%;
+}
+
+.form-margin { /* creo que ya no la uso*/
+  margin: form;
+}
+
+form { /*ver si es necesaria*/ }
+form .row {
+  margin-bottom: 16px;
+}
+
 /*# sourceMappingURL=styles.css.map */

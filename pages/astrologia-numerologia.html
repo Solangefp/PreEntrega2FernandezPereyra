@@ -2,61 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidad con los navegadores -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--CSS-->
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Proyecto</title>
+    <title>Camino de luz - Astrologia y numerologia</title>
 </head>
+
 <body>
+
     <header>
-        <img src="../images/imagotipo.png" alt="">
-        <nav>
-            <ul>
-                <li class="list-item">
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li class="list-item">
-                    <a href="../pages/sobre-mi.html">Sobre mi</a>
-                </li>
-                <li class="list-item">
-                    <a href="../pages/meditacion-reiki.html">Meditación y Reiki</a>
-                </li>
-                <li class="current-item">
-                    <a href="../pages/astrologia-numerologia.html">Astrología y Numerología</a>
-                </li>
-                <li class="list-item">
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <figure class="header-img">
+            <img src="../images/headerimg.png" alt="">
+        </figure> 
+
+        <div> <!--class="responsive-navbar"-->
+            <nav class="navbar navbar-expand-lg bg-nav">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-content">
+                        <ul class="navbar-ul">
+                            <li class="list-item">
+                                <a href="../index.html">Inicio</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="sobre-mi.html">Sobre mi</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="meditacion-reiki.html">Meditación y Reiki</a>
+                            </li>
+                            <li class="list-item current-item">
+                                <a href="astrologia-numerologia.html">Astrología y Numerología</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
+
     <main>
-        <section> <!-- ASTROLOGIA -->
-            <h2>Astrología</h2>
-            <article>
+        <section class="pages"> <!-- ASTROLOGIA -->
+            <div class="pages-title">
+                <h2><strong>Astrología</strong></h2>
+            </div>
+            <div class="main-cont">
                 <p>La astrología se encarga de estudiar la posición y comportamiento de los astros y, de esa forma, conforma una referencia entre sus conductas y los seres humanos. De acuerdo a sus fundamentos, cada movimiento planetario podrá afectar o influenciar a las personas, sus emociones, pensamientos y formas de ver la vida.</p>
-                <p>Se trata de un conjunto de creencias que interpreta acontecimientos en el cielo y permite conocer cómo se desarrollarán ciertas situaciones.</p>       
-            </article>
-            <img src="../images/cartanatal.png" alt="Carta natal ejemplo">
-            <article>
+                <p>Se trata de un conjunto de creencias que interpreta acontecimientos en el cielo y permite conocer cómo se desarrollarán ciertas situaciones.</p>
+                <img src="../images/cartanatal.png" alt="Carta natal ejemplo">
                 <p>Se basa en el análisis de la carta natal (mapa de los astros al momento de nuestro nacimiento) para comprender cada aspecto de nuestra personalidad.</p>
-                <p>Así mismo, es posible estar atentos a los cambios astrológicos del día a día y la predisposición a diversas situaciones que puedan presentarse.</p>       
-            </article>
+                <p>Así mismo, es posible estar atentos a los cambios astrológicos del día a día y la predisposición a diversas situaciones que puedan presentarse.</p>
+            </div>
         </section>
 
-        <section> <!-- NUMEROLOGIA -->
-            <h2>Numerología</h2>
-            <article>
+        <section class="pages"><!-- NUMEROLOGIA -->
+            <div class="pages-title">
+                <h2><strong>Numerología</strong></h2>
+            </div>
+            <div class="main-cont">
                 <p>La numerología es un conjunto de creencias que busca establecer una relación oculta entre los números, los seres vivos y las fuerzas físicas o espirituales.</p>
                 <p>Los números son uno de los conceptos humanos más perfectos y elevados. </p>       
-            </article>
-            <img src="../images/numerología.png" alt="Tabla abecedario numerológico">
-            <article>
+                <img src="../images/numerología.png" alt="Tabla abecedario numerológico">
                 <p>La numerología es la disciplina que busca investigar la vibración secreta de ese código y enseña a utilizar los números en su beneficio, por medio del estudio de su influencia sobre personas y animales.</p>
                 <p>De igual manera, cada número tiene un significado y tiene ciertas características que designan cosas. Por ejemplo, con la suma de los dígitos de nuestra fecha de nacimiento vamos a obtener un número del 1 al 9. Si es mayor, se tendrá que sumar los números que componen el número, y según el número que te salga tendrás una descripción de tu personalidad, habilidades, debilidades, cómo nos relacionamos con otros, sucesos que quizá pasarán en nuestra vida y la misión de vida que tenemos, etc.</p>       
-            </article>
+            </div>
         </section>
 
         <section class="redes">
