@@ -5,15 +5,30 @@
     align-items: $align;
 }
 
-@mixin estilo ($bg-color, $margin, $padding) {
+@mixin style ($bg-color, $margin, $padding) {
     background-color: $bg-color;
     margin: $margin;
     padding: $padding;
 }
 
-@mixin estilo-txt ($family, $size, $color, $align) {
+@mixin txt-style ($family, $size, $color, $align) {
     font-family: $family;
     font-size: $size;
     color: $color;
     text-align: $align;
+}
+
+@mixin grid ($gap, $gridarea) {
+    display: grid;
+    gap: $gap;
+    grid-area: $gridarea;
+}
+
+@mixin formstyle ($radius, $border, $padding, $bg-color, $color, $height) {
+    border-radius: $radius;
+    border: $border;
+    padding: $padding;
+    background-color: $bg-color;
+    color: $color;
+    height: $height;
 }

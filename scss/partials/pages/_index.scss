@@ -1,12 +1,15 @@
 .main-title {
-    @include estilo(transparent, 15px, 40px 30px);
+    @include style(transparent, 15px 50px, 40px 30px);
+    @include flex(column, center, center);
     p {
-        font-size: 20px;
+        margin: 0px;
+
     }
 }
 
 .main-content {
-    @include estilo( $lilac, 15px 50px, 20px);
+    @include style( $lilac, 15px 70px, 20px);
+    border-radius: 14px;
     @include flex(row, center, center);
     img {
         padding-right: 25px;

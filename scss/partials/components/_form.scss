@@ -1,0 +1,51 @@
+.contacto {
+    @extend p;
+    p {
+        max-width: 980px;
+        box-sizing: border-box; /* el max-width 980px es el borde del box y no solo el contenido*/
+    }
+    margin-top: 30px;
+
+    display: grid;
+    gap: 25px;
+    grid: 
+    "0         form" auto
+    "details   form" 1fr
+    "details   form" auto/
+    1fr         2fr;
+    align-items: start; 
+}
+
+.contact-details {
+    @include grid(20px, details);
+}
+
+.contact-form {
+    @include grid(20px, form);
+    input {
+        @include formstyle(7px, 0px, 5px 10px, none, none, 30px);
+
+    }
+    textarea {
+        @include formstyle(7px, 0px, 5px 10px, none, none, auto);
+    }
+}
+
+.contact-group {
+    display: grid;
+    gap: 3px;
+}
+
+.contact-label {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.contact-form-button {
+    width: 25%;
+    @include formstyle(7px, 2px solid $darkyellow, 0, $yellow, $darkgray, 50px);
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 14px $darkyellow;
+    }
+}

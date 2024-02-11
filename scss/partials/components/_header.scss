@@ -1,6 +1,6 @@
 .header-img {
     @include flex(row, center, center);
-    @include estilo($yellow, 0px, 10px);
+    @include style($yellow, 0px, 10px);
     width: 100%;
     img {
         width: 80%;

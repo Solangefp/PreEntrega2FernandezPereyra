@@ -1,6 +1,7 @@
 .pages { 
-    @include estilo($lilac, 30px 50px, 40px 30px);
-    @include flex(column, center, center);
+    @include style($lilac, 30px 70px, 40px 30px);
+    border-radius: 14px;
+    /* @include flex(column, center, center); */ /*ver si obviando el flex funciona todo*/
 }
 
 .pages-title { /* revisar*/
@@ -10,15 +11,10 @@
 
 .main-cont {
     @include flex(column, center, center);
-    img { /*pages reemplazar por video en sobre-mi*/
-        padding: 2px 0px;
-        @include flex(column, center, center);
-        width: 50%;
-    }
 }
 
 .main-content-pages {
-    @include estilo($lilac, 15px, 0px);
+    @include style($lilac, 15px, 0px);
     @include flex(row, center, center);
     img {
         padding-right: 25px;
@@ -29,23 +25,4 @@
 iframe {
     max-width: 80%;
     height: auto;
-}
-
-/* CONTACTO */
-.form-width {
-    width: 80%;
-}
-
-.form-margin { /* creo que ya no la uso*/
-    margin: form;
-}
-
-form { /*ver si es necesaria*/
-    .row {
-        margin-bottom: 16px;
-    }
-}
-
-label {
-
 }

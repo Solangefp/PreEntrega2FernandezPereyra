@@ -1,12 +1,16 @@
 .bg-nav {
-    @include estilo($lilac, 0px, 0px);
+    @include style($lilac, 0px, 0px);
+}
+
+.item-margin {
+    margin: 0px 90px;
 }
 
 .list-item {
     list-style: none;
     a {
-        @include estilo( auto, 0px, 0px 20px);
-        @include estilo-txt($gothic, $nav-fontsize, $gray, center);
+        @include style( auto, 5px 60px, 0px);
+        @include txt-style($gothic, $nav-fontsize, $gray, center);
         text-decoration: none;
         cursor: pointer;
         &:hover {
@@ -17,17 +21,30 @@
 }
 
 .current-item {
-    @include estilo( auto, 0px, 0px 20px);
-    @include estilo-txt($gothic, $nav-fontsize, black, center);
+    @include style( auto, 0px, 0px 20px);
+    @include txt-style($gothic, $nav-fontsize, black, center);
     text-decoration: underline;
     cursor: pointer;
 }
 
 .navbar-ul {
-    @include estilo( auto, 0px, 0px);
-    @include flex(row, auto, center);
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
 }
 
 .nav-content {
     @include flex(row, space-around, center);
+}
+
+.item-margin {
+    margin: 0px 90px;
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1235px) {
+    .list-item {
+        a {
+            @include style( auto, 5px 35px, 0px);
+        }
+    }
 }

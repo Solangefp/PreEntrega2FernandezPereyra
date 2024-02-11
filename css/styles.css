@@ -1,6 +1,8 @@
 /* COLORES */
 /* FUENTES */
 /* FONT SIZE */
+/* FORMULARIO */
+/*$border-radius*/
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 * {
@@ -20,18 +22,20 @@ body {
 h2 {
   padding-bottom: 10px;
   font-family: "century-gothic-normal";
-  font-size: 25px;
+  font-size: 30px;
   color: #151916;
   text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
-p {
-  background-color: auto;
-  margin: 0px;
+p, .contacto {
+  background-color: transparent;
+  margin: 0px auto;
   padding: 10px;
   font-family: "century-gothic-normal";
-  font-size: 18px;
-  color: black;
+  font-size: 20px;
+  color: #151916;
   text-align: center;
 }
 
@@ -45,7 +49,7 @@ h3 {
 
 h4 {
   font-family: "Lora", serif;
-  font-size: 10px;
+  font-size: 13px;
   color: #404a43;
   text-align: center;
 }
@@ -70,13 +74,17 @@ h4 {
   padding: 0px;
 }
 
+.item-margin {
+  margin: 0px 90px;
+}
+
 .list-item {
   list-style: none;
 }
 .list-item a {
   background-color: auto;
-  margin: 0px;
-  padding: 0px 20px;
+  margin: 5px 60px;
+  padding: 0px;
   font-family: "century-gothic-normal";
   font-size: 15px;
   color: rgba(44, 38, 38, 0.92);
@@ -102,12 +110,8 @@ h4 {
 }
 
 .navbar-ul {
-  background-color: auto;
   margin: 0px;
   padding: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: auto;
   align-items: center;
 }
 
@@ -116,6 +120,81 @@ h4 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+
+.item-margin {
+  margin: 0px 90px;
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1235px) {
+  .list-item a {
+    background-color: auto;
+    margin: 5px 35px;
+    padding: 0px;
+  }
+}
+.contacto {
+  margin-top: 30px;
+  display: grid;
+  gap: 25px;
+  grid: "0         form" auto "details   form" 1fr "details   form" auto/1fr 2fr;
+  align-items: start;
+}
+.contacto p, .contacto .contacto {
+  max-width: 980px;
+  box-sizing: border-box; /* el max-width 980px es el borde del box y no solo el contenido*/
+}
+
+.contact-details {
+  display: grid;
+  gap: 20px;
+  grid-area: details;
+}
+
+.contact-form {
+  display: grid;
+  gap: 20px;
+  grid-area: form;
+}
+.contact-form input {
+  border-radius: 7px;
+  border: 0px;
+  padding: 5px 10px;
+  background-color: none;
+  color: none;
+  height: 30px;
+}
+.contact-form textarea {
+  border-radius: 7px;
+  border: 0px;
+  padding: 5px 10px;
+  background-color: none;
+  color: none;
+  height: auto;
+}
+
+.contact-group {
+  display: grid;
+  gap: 3px;
+}
+
+.contact-label {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.contact-form-button {
+  width: 25%;
+  border-radius: 7px;
+  border: 2px solid #f4f0c1;
+  padding: 0;
+  background-color: #FAF5BB;
+  color: #151916;
+  height: 50px;
+  cursor: pointer;
+}
+.contact-form-button:hover {
+  box-shadow: 0 0 14px #f4f0c1;
 }
 
 .redes {
@@ -162,17 +241,22 @@ h4 {
 
 .main-title {
   background-color: transparent;
-  margin: 15px;
+  margin: 15px 50px;
   padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.main-title p {
-  font-size: 20px;
+.main-title p, .main-title .contacto {
+  margin: 0px;
 }
 
 .main-content {
   background-color: #F0C4F7;
-  margin: 15px 50px;
+  margin: 15px 70px;
   padding: 20px;
+  border-radius: 14px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -185,12 +269,10 @@ h4 {
 
 .pages {
   background-color: #F0C4F7;
-  margin: 30px 50px;
+  margin: 30px 70px;
   padding: 40px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  border-radius: 14px;
+  /* @include flex(column, center, center); */ /*ver si obviando el flex funciona todo*/
 }
 
 .pages-title { /* revisar*/
@@ -206,14 +288,6 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.main-cont img { /*pages reemplazar por video en sobre-mi*/
-  padding: 2px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
 }
 
 .main-content-pages {
@@ -233,20 +307,6 @@ h4 {
 iframe {
   max-width: 80%;
   height: auto;
-}
-
-/* CONTACTO */
-.form-width {
-  width: 80%;
-}
-
-.form-margin { /* creo que ya no la uso*/
-  margin: form;
-}
-
-form { /*ver si es necesaria*/ }
-form .row {
-  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */
