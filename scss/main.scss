@@ -3,6 +3,7 @@
 @import "partials/utilities/maps";
 @import "partials/utilities/mixins";
 
+
 // BASE
 @import "partials/base/reset";
 @import "partials/base/tipografia";
@@ -18,3 +19,5 @@
 // PAGES
 @import "partials/pages/index";
 @import "partials/pages/sobre-mi";
+
+@import "partials/utilities/mediaqueries";

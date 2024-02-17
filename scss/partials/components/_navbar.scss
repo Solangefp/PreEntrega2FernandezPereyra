@@ -23,7 +23,7 @@
 .current-item {
     @include style( auto, 0px, 0px 20px);
     @include txt-style($gothic, $nav-fontsize, black, center);
-    text-decoration: underline;
+    font-weight: bold;
     cursor: pointer;
 }
 

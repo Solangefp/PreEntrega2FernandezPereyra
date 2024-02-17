@@ -3,6 +3,20 @@
 /* FONT SIZE */
 /* FORMULARIO */
 /*$border-radius*/
+/*$breakpoints: (
+    mobile: 500px,
+    tablet: 960px,
+);
+
+$colors: (
+    $green: #d6f8e1;
+    $yellow: #FAF5BB;
+    $darkyellow: #f4f0c1;
+    $lilac: #F0C4F7;
+    $gray: rgba(44, 38, 38, 0.92);
+    $darkgray: #151916;
+    $graygreen: #404a43;
+);*/
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 * {
@@ -17,7 +31,7 @@ body {
 /*   FONTS   */
 @font-face {
   font-family: "century-gothic-normal";
-  src: url(../../../fonts/century-gothic/gothic.TTF);
+  src: url(/../../../fonts/century-gothic/gothic.TTF);
 }
 h2 {
   padding-bottom: 10px;
@@ -86,7 +100,7 @@ h4 {
   margin: 5px 60px;
   padding: 0px;
   font-family: "century-gothic-normal";
-  font-size: 15px;
+  font-size: 16px;
   color: rgba(44, 38, 38, 0.92);
   text-align: center;
   text-decoration: none;
@@ -102,10 +116,10 @@ h4 {
   margin: 0px;
   padding: 0px 20px;
   font-family: "century-gothic-normal";
-  font-size: 15px;
+  font-size: 16px;
   color: black;
   text-align: center;
-  text-decoration: underline;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -272,10 +286,9 @@ h4 {
   margin: 30px 70px;
   padding: 40px 30px;
   border-radius: 14px;
-  /* @include flex(column, center, center); */ /*ver si obviando el flex funciona todo*/
 }
 
-.pages-title { /* revisar*/
+.pages-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,6 +320,128 @@ h4 {
 iframe {
   max-width: 80%;
   height: auto;
+}
+
+/*media query mobile*/
+@media (max-width: 480px) {
+  /*components/index*/
+  h2 {
+    padding: 12px;
+    margin: 0px;
+    font-family: "century-gothic-normal";
+    font-size: 25px;
+    color: #151916;
+    text-align: center;
+  }
+  p, .contacto {
+    font-size: 13px;
+  }
+  h3 {
+    margin: 30px 12px 0px 12px;
+    font-size: 17px;
+  }
+  h4 {
+    font-size: 7px;
+  }
+  .header-img {
+    max-width: 100%;
+  }
+  /*navbar*/
+  /*pages/index*/
+  .main-title {
+    padding: 20px 10px;
+    margin: 0px 10px;
+  }
+  .main-content {
+    background-color: #F0C4F7;
+    margin: 5px 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-content img {
+    padding-right: 0px;
+    padding-top: 10px;
+    width: 60%;
+  }
+  /*pages/sobre-mi*/
+  .pages {
+    background-color: #F0C4F7;
+    margin: 15px 30px;
+    padding: 10px;
+  }
+  .pages-title h2 {
+    padding: 0px;
+    margin-bottom: 5px;
+  }
+  .main-cont p, .main-cont .contacto {
+    padding: 2px 0px;
+  }
+  .main-cont img {
+    width: 60%;
+  }
+  .main-content-pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .main-content-pages img {
+    padding-right: 0px;
+    width: 45%;
+  }
+  .main-content-pages p, .main-content-pages .contacto {
+    padding: 2px 0px;
+  }
+  iframe {
+    max-width: 50%;
+  }
+  /*redes*/
+  .redes {
+    background-color: transparent;
+    margin: 15px;
+    padding: 10px;
+  }
+  .redes-ul {
+    justify-content: space-evenly;
+  }
+  .redes-ul li {
+    width: 55px;
+    height: 55px;
+  }
+  .redes-ul li a {
+    padding: 0px 13px;
+  }
+  /*footer*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer img {
+    width: 20%;
+  }
+  /*form*/
+  .contacto {
+    margin-top: 10px;
+    gap: 0px;
+  }
+  .contacto p, .contacto .contacto {
+    max-width: 450px;
+  }
+  .contact-details {
+    gap: 30px;
+  }
+  .contact-form {
+    gap: 27px;
+  }
+  .contact-form-button {
+    width: 45%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,129 @@
+/*media query mobile*/
+
+@media (max-width: 480px) {
+    /*components/index*/
+    h2 {
+        padding: 12px;
+        margin: 0px;
+        @include txt-style($gothic, 25px, $darkgray, center);
+    }
+        
+    p {
+        font-size: 13px;
+    }
+    
+    h3 {
+        margin: 30px 12px 0px 12px;
+        font-size: 17px;;
+    }
+    
+    h4 {
+        font-size: 7px;
+    }
+
+    .header-img {
+        max-width: 100%;
+    }
+
+    /*navbar*/
+    
+
+    /*pages/index*/
+    .main-title {
+        padding: 20px 10px;
+        margin: 0px 10px;
+    }
+    
+    .main-content {
+        @include style( $lilac, 5px 30px, 10px);
+        @include flex(column, center, center);
+        img {
+            padding-right: 0px;
+            padding-top: 10px;
+            width: 60%;
+        }    
+    }
+
+    /*pages/sobre-mi*/
+    .pages { 
+        @include style($lilac, 15px 30px, 10px);
+    }
+    
+    .pages-title { 
+        h2 {
+            padding: 0px;
+            margin-bottom: 5px;
+        }
+    }
+    
+    .main-cont {
+        p {
+            padding: 2px 0px;
+        }
+        img {
+            width: 60%;
+        }
+    }
+    
+    .main-content-pages {
+        @include flex(column, center, center);
+        margin: 0px;
+        img {
+            padding-right: 0px;
+            width: 45%;
+        }
+        p {        
+            padding: 2px 0px;
+        }
+    }
+    
+    iframe {
+        max-width: 50%;
+    }
+
+    /*redes*/
+    .redes {
+        @include style(transparent, 15px, 10px);
+    }
+    
+    .redes-ul {
+        justify-content: space-evenly;
+        li { 
+            width: 55px;
+            height: 55px;
+            a { 
+                padding: 0px 13px;
+            }
+        }
+    }
+
+    /*footer*/
+    .footer {
+        @include flex(column, center, center);
+        img {
+        width: 20%;
+        }
+    }
+
+    /*form*/
+    .contacto {
+        p {
+            max-width: 450px;
+        }
+        margin-top: 10px;
+   
+        gap: 0px;
+    }
+    
+    .contact-details {
+        gap: 30px;
+    }
+    
+    .contact-form {
+        gap: 27px;
+    }
+    
+    .contact-form-button {
+        width: 45%;
+    }
+}
