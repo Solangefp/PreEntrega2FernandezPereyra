@@ -1,7 +1,3 @@
-/* COLORES */
-/* FUENTES */
-/* FONT SIZE */
-/* MIXINS */
 /*   FONTS   */
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
@@ -9,6 +5,10 @@
   font-family: "century-gothic-normal";
   src: url(../../../fonts/centurygothic/gothic.TTF);
 }
+/* COLORES */
+/* FUENTES */
+/* FONT SIZE */
+/* MIXINS */
 /* RESET */
 * {
   margin: 0;
