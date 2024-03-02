@@ -1,5 +1,20 @@
+/* COMPONENTS/REDES */
+
 .redes {
     @include style(transparent, 20px, 30px);
+}
+
+@keyframes icons-flip {
+    10% {transform: rotateY(36deg);}
+    20% {transform: rotateY(72deg);}
+    30% {transform: rotateY(108deg);}
+    40% {transform: rotateY(144deg);}
+    50% {transform: rotateY(180deg);}
+    60% {transform: rotateY(216deg);}
+    70% {transform: rotateY(252deg);}
+    80% {transform: rotateY(288deg);}
+    90% {transform: rotateY(324deg);}
+    100% {transform: rotateY(360deg);}
 }
 
 .redes-ul {
@@ -16,6 +31,13 @@
             display: block;
             padding: 5px;
             line-height: 50px;
+            &:hover {
+                animation-name: icons-flip;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: 1s;
+                animation-delay: 0.3s;
+            }
         }
     }
 }

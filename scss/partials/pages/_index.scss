@@ -1,5 +1,6 @@
+/* PAGES/INDEX */
 .main-title {
-    @include style(transparent, 15px 50px, 40px 30px);
+    @include style(transparent, 5px 50px, 40px 30px);
     @include flex(column, center, center);
     p {
         margin: 0px;

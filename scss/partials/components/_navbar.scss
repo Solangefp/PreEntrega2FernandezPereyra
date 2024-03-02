@@ -1,15 +1,13 @@
+/* COMPONENTS/NAVBAR */
+
 .bg-nav {
     @include style($lilac, 0px, 0px);
-}
-
-.item-margin {
-    margin: 0px 90px;
 }
 
 .list-item {
     list-style: none;
     a {
-        @include style( auto, 5px 60px, 0px);
+        @include style(transparent, 3px 30px, 0px);
         @include txt-style($gothic, $nav-fontsize, $gray, center);
         text-decoration: none;
         cursor: pointer;
@@ -21,7 +19,7 @@
 }
 
 .current-item {
-    @include style( auto, 0px, 0px 20px);
+    @include style(transparent, 0px, 0px 20px);
     @include txt-style($gothic, $nav-fontsize, black, center);
     font-weight: bold;
     cursor: pointer;
@@ -35,16 +33,4 @@
 
 .nav-content {
     @include flex(row, space-around, center);
-}
-
-.item-margin {
-    margin: 0px 90px;
-}
-
-@media only screen and (min-width: 901px) and (max-width: 1235px) {
-    .list-item {
-        a {
-            @include style( auto, 5px 35px, 0px);
-        }
-    }
 }

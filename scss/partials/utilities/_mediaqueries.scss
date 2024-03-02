@@ -1,11 +1,17 @@
-/*media query mobile*/
+/* Mediaquery mobile hasta 480px */
 
 @media (max-width: 480px) {
     /*components/index*/
-    h2 {
+    h1 {
         padding: 12px;
         margin: 0px;
         @include txt-style($gothic, 25px, $darkgray, center);
+    }
+
+    h2 {
+        padding: 12px;
+        margin: 0px;
+        @include txt-style($gothic, 21px, $darkgray, center);
     }
         
     p {
@@ -14,7 +20,7 @@
     
     h3 {
         margin: 30px 12px 0px 12px;
-        font-size: 17px;;
+        font-size: 17px;
     }
     
     h4 {
@@ -24,9 +30,6 @@
     .header-img {
         max-width: 100%;
     }
-
-    /*navbar*/
-    
 
     /*pages/index*/
     .main-title {
@@ -44,12 +47,16 @@
         }    
     }
 
-    /*pages/sobre-mi*/
+    /*pages/pages*/
     .pages { 
         @include style($lilac, 15px 30px, 10px);
     }
     
     .pages-title { 
+        h1 {
+            padding: 0px;
+            margin-bottom: 5px;
+        }
         h2 {
             padding: 0px;
             margin-bottom: 5px;
@@ -110,17 +117,170 @@
         p {
             max-width: 450px;
         }
+        margin-top: 0px;
+   
+        gap: 0px;
+        grid: 
+        "0"
+        "details"
+        "details"
+        "form"
+        "form"
+        "form";
+    }
+    
+    .contact-details {
+        gap: 20px;
+    }
+    
+    .contact-form {
+        gap: 15px;
+    }
+    
+    .contact-group {
+        gap: 4px;
+        margin: 2px 0px;
+        p {
+            padding: 0px;
+        }
+    }
+
+    .contact-form-button {
+        width: 45%;
+    }
+}
+
+
+
+/* Mediaquery tablet 481px - 960px */
+@media (min-width: 481px) and (max-width: 960px) {
+    /*components/index*/
+    h1 {
+        padding: 11px;
+        margin: 0px;
+        @include txt-style($gothic, 27px, $darkgray, center);
+    }
+
+    h2 {
+        padding: 11px;
+        margin: 0px;
+        @include txt-style($gothic, 24px, $darkgray, center);
+    }
+        
+    p {
+        font-size: 15px;
+    }
+    
+    h3 {
+        margin: 25px 15px 0px 15px;
+        font-size: 18px;;
+    }
+    
+    h4 {
+        font-size: 9px;
+    }
+
+    .header-img {
+        max-width: 100%;
+    }
+
+    /*pages/index*/
+    .main-title {
+        padding: 20px 10px;
+        margin: 0px 10px;
+    }
+    
+    .main-content {
+        @include style( $lilac, 5px 30px, 10px);
+        @include flex(column, center, center);
+        img {
+            padding-right: 0px;
+            padding-top: 10px;
+            width: 70%;
+        }    
+    }
+
+    /*pages/pages*/
+    .pages { 
+        @include style($lilac, 15px 30px, 10px);
+    }
+    
+    .pages-title { 
+        h1 {
+            padding: 0px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            padding: 0px;
+            margin-bottom: 5px;
+        }
+    }
+    
+    .main-cont {
+        p {
+            padding: 2px 0px;
+        }
+        img {
+            width: 60%;
+        }
+    }
+    
+    .main-content-pages {
+        @include flex(column, center, center);
+        margin: 0px;
+        img {
+            padding-right: 0px;
+            width: 45%;
+        }
+        p {        
+            padding: 2px 0px;
+        }
+    }
+    
+    iframe {
+        max-width: 60%;
+    }
+
+    /*redes*/
+    .redes {
+        @include style(transparent, 18px, 20px);
+    }
+    
+    .redes-ul {
+        justify-content: space-evenly;
+        li { 
+            width: 55px;
+            height: 55px;
+            a { 
+                padding: 0px 13px;
+            }
+        }
+    }
+
+    /*footer*/
+    .footer {
+        @include flex(column, center, center);
+        img {
+        width: 15%;
+        }
+    }
+
+    /*form*/
+    .contacto {
+        p {
+            max-width: 500px;
+        }
         margin-top: 10px;
    
         gap: 0px;
     }
     
     .contact-details {
-        gap: 30px;
+        gap: 25px;
     }
     
     .contact-form {
-        gap: 27px;
+        gap: 20px;
     }
     
     .contact-form-button {

@@ -1,3 +1,4 @@
+/* PAGES/PAGES */
 .pages { 
     @include style($lilac, 30px 70px, 40px 30px);
     border-radius: 14px;
@@ -6,6 +7,10 @@
 .pages-title {
     @include flex(column, center, center);
     align-self: center;
+    h1 {
+        margin-top: 10px;
+        padding: 0px;
+    }
 }
 
 .main-cont {

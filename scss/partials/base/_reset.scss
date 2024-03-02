@@ -1,8 +1,9 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: $green;
+    background-color: map-get($bg-color, green);
 }

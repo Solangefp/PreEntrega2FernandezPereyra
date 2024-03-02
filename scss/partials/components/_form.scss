@@ -1,8 +1,10 @@
+/* COMPONENTS/FORM */
+
 .contacto {
     @extend p;
     p {
         max-width: 980px;
-        box-sizing: border-box; /* el max-width 980px es el borde del box y no solo el contenido*/
+        box-sizing: border-box;
     }
     margin-top: 30px;
 
@@ -27,7 +29,10 @@
 
     }
     textarea {
-        @include formstyle(7px, 0px, 5px 10px, none, none, auto);
+        border-radius: 7px;
+        border: 0px;
+        padding: 5px 10px;
+        height: auto;
     }
 }
 
